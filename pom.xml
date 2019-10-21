@@ -27,6 +27,27 @@
             <version>5.4.2</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- These should probably be plugin dependencies of the exec plugin. However, setting
+             that up will require some adjustments to the execution configuration so that the
+             main class of the java program being executed can be located. See the documentation
+             on the exec plugin for more information. -->
+        <dependency>
+            <groupId>xalan</groupId>
+            <artifactId>xalan</artifactId>
+            <version>2.7.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.xmlgraphics</groupId>
+            <artifactId>fop</artifactId>
+            <version>2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.docbook</groupId>
+            <artifactId>docbook-xsl</artifactId>
+            <version>1.79.1</version>
+            <type>pom</type>
+        </dependency>
     </dependencies>
 
     <build>
@@ -36,6 +57,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.1</version>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -46,6 +68,7 @@
                     </archive>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
@@ -59,10 +82,64 @@
                     </dependency>
                 </dependencies>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.1.1</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <id>generate-fo</id>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                    <!-- I'm not sure how to set up this second execution. -->
+                    <!-- It might be that I need to use Maven profiles to make this work. -->
+                    <execution>
+                        <id>generate-pdf</id>
+                        <!-- This configuration appears to be ignored. I'm keeping it here for
+                             future reference since some of the details might be needed later. -->
+                        <configuration>
+                            <workingDirectory>doc</workingDirectory>
+                            <executable>java</executable>
+                            <arguments>
+                                <argument>-classpath</argument>
+                                <classpath/>
+                                <argument>org.apache.fop.cli.Main</argument>
+                                <argument>Obscura.fop</argument>
+                                <argument>Obscura.pdf</argument>
+                            </arguments>
+                        </configuration>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <!-- This configuration is appropriate for the first execution. However, moving
+                     the configuration inside the execution element, for example to distinguish
+                     it from the second execution, doesn't work. It is just ignored there. -->
+                <configuration>
+                    <workingDirectory>doc</workingDirectory>
+                    <executable>java</executable>
+                    <arguments>
+                        <argument>-classpath</argument>
+                        <classpath/>
+                        <argument>org.apache.xalan.xslt.Process</argument>
+                        <argument>-IN</argument>
+                        <argument>Obscura.xml</argument>
+                        <argument>-XSL</argument>
+                        <argument>docbook-xsl-ns-1.76.1/fo/docbook.xsl</argument>
+                        <argument>-OUT</argument>
+                        <argument>Obscura.fo</argument>
+                    </arguments>
+                </configuration>
             </plugin>
         </plugins>
     </build>
