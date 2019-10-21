@@ -52,14 +52,14 @@ This is the documentation for the Obscura OpenPGP tool. -->
     <title>Introduction</title>
 
     <para>Obscura is an open source tool written in Java for processing OpenPGP formatted files.
-    It is intended to ultimately support the full range of OpenPGP processing, for example
-    similar to what GnuPG supports. However, the primary purpose of this project is educational.
-    It is used in classes at Vermont Technical College as a source of samples, and of
-    programming exercises and assignments.</para>
+      It is intended to ultimately support the full range of OpenPGP processing, for example
+      similar to what GnuPG supports. However, the primary purpose of this project is
+      educational. It is used in classes at Vermont Technical College as a source of samples,
+      and of programming exercises and assignments.</para>
 
     <para>Obscura is mostly used in connection with the Secure Programming class at VTC as a
-    vehicle for demonstrating the use of encryption technology in programs, and as a non-trivial
-    program with its own security requirements.</para>
+      vehicle for demonstrating the use of encryption technology in programs, and as a
+      non-trivial program with its own security requirements.</para>
 
     <!-- Include disclaimer. -->
 

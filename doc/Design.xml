@@ -5,14 +5,14 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
 
-  <title>Obscura Design</title>
+  <title>Design</title>
 
   <para>This chapter contains the design documentation for Obscura. This chapter is only of
     interest to Obscura contributors (or potential contributors). If you are a user of Obscura
     you can ignore this entire chapter.</para>
 
   <section>
-    <title>Obscura Structure</title>
+    <title>Structure</title>
     <para>In this section we describe the overall structure of Obscura.</para>
   </section>
 

@@ -1,3 +1,10 @@
+# Maven output.
 /target/
+
+# Related to the documentation build.
 doc/Obscura.fo
+doc/Obscura.pdf
 doc/docbook-xsl-ns-1.76.1/
+
+# IntelliJ project folder.
+.idea/
