@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!-- FILE        : Obscura.xml
+     SUBJECT     : Master document for the Augusta documentation set.
+     AUTHOR      : (C) Copyright 2019 by Peter C. Chapin <chapinp@acm.org>
+
+This is the documentation for the Obscura OpenPGP tool. -->
+
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+
+  <info>
+    <title>Obscura</title>
+    <author>
+      <personname>
+        <firstname>Peter</firstname>
+        <surname>Chapin</surname>
+        <othername role="mi">C.</othername>
+      </personname>
+      <affiliation>
+        <orgname>Vermont Technical College</orgname>
+        <orgdiv>Computer Information Systems Department</orgdiv>
+      </affiliation>
+    </author>
+    <authorinitials>pcc</authorinitials>
+    <copyright>
+      <year>2019</year>
+      <holder>Peter C. Chapin</holder>
+    </copyright>
+    <legalnotice>
+      <para> Permission is granted to copy, distribute and/or modify this document under the
+        terms of the GNU Free Documentation License, Version 1.1 or any later version published
+        by the Free Software Foundation; with the Invariant Sections being LIST THEIR TITLES,
+        with the Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST. A copy
+        of the license is included in the section entitled "GNU Free Documentation License".
+      </para>
+    </legalnotice>
+    <!-- Do we really want to include this revision history now? -->
+    <revhistory>
+      <revision>
+        <revnumber>1.0</revnumber>
+        <date>2020-12-31</date>
+        <authorinitials>pcc</authorinitials>
+        <revremark>This is a work in progress. Release 1.0 is scheduled for the end of
+          2020.</revremark>
+      </revision>
+    </revhistory>
+  </info>
+  <preface>
+    <title>Introduction</title>
+
+    <para>Obscura is an open source tool written in Java for processing OpenPGP formatted files.
+    It is intended to ultimately support the full range of OpenPGP processing, for example
+    similar to what GnuPG supports. However, the primary purpose of this project is educational.
+    It is used in classes at Vermont Technical College as a source of samples, and of
+    programming exercises and assignments.</para>
+
+    <para>Obscura is mostly used in connection with the Secure Programming class at VTC as a
+    vehicle for demonstrating the use of encryption technology in programs, and as a non-trivial
+    program with its own security requirements.</para>
+
+    <!-- Include disclaimer. -->
+
+  </preface>
+
+  <xi:include href="User.xml"/>
+  <xi:include href="Requirements.xml"/>
+  <xi:include href="Design.xml"/>
+
+  <!-- <bibliography> ... </bibliography> -->
+
+</book>

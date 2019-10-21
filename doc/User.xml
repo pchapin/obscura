@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+
+  <title>Obscura User Documentation</title>
+
+  <para>This chapter contains the user documentation for Obscura. It is divided into sections
+  that target different kinds of users. The first section is for traditional users who wish to
+  use Obscura as a traditional, interactive tool. The second section is for programmers who
+  wish to use Obscure as a library in their own programs.</para>
+
+  <section>
+    <title>Obscura as a Tool</title>
+
+    <para>In this section we describe the use of Obscura as a traditional, command-line driven
+    tool. We describe installation, command-line syntax and options, and error message
+    format.</para>
+
+    <section>
+      <title>Installation</title>
+      <para>Obscura requires that several prerequisites systems be installed...</para>
+    </section>
+
+    <section>
+      <title>Command Line Syntax</title>
+      <para>Obscura is invoked...</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Obscura as a Library</title>
+    <para><emphasis>Finish Me!</emphasis></para>
+  </section>
+
+</chapter>
