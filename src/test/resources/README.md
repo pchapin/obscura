@@ -35,11 +35,11 @@ packet: D2
 
     D2 = 1101,0010 = 11 010010
     
-This is a new-style package of type 18, "Symmetric Encrypted and Integrity Protected Data
+This is a new-style packet of type 18, "Symmetric Encrypted and Integrity Protected Data
 Packet."
 
 The first octet of the length of this packet is E9 which corresponds to a partial body length.
-The implied partial length is 1 << (0xE9 * 0x1F), which is 1 << 9, which is 512.
+The implied partial length is 1 << (0xE9 & 0x1F), which is 1 << 9, which is 512.
 
 Returning to the initial packet... the body is:
 
@@ -65,7 +65,7 @@ The RFC specifies:
    Encrypted Data packet, followed by the session key octets themselves.
 
 The first octet is, indeed, 4 as required. The symmetric algorithm used is represented by 7 (AES
-with 128 bit key; see Section 9 of the RFC). This is follows by the String2Key identifier of 3
+with 128 bit key; see Section 9 of the RFC). This is followed by the String2Key identifier of 3
 (Iterated and Salted S2K). The hash algorithm used is indicated by 2 (SHA-1), followed by an 8
 octet salt value (7F E0 2A 8A 86 6E 42 9A), followed by a count (B9).
 
