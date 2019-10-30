@@ -38,7 +38,7 @@ public interface Packet {
     /**
      * Reads the next Packet from the given InputStream. This method inspects the packet header,
      * creates a suitable subtype instance, and asks that instance to read and decode its
-     * content from the input file.
+     * content from the InputStream.
      * @param is The InputStream from which to read the next OpenPGP packet.
      * @return A reference to the packet read.
      */
