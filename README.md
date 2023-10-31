@@ -2,8 +2,8 @@ Obscura
 =======
 
 Obscura is a Java program that implements the OpenPGP standard. It is intended primarly as a
-source of exercises and assignments for students in my Secure Programming class at Vermont
-Technical College (as well as possibly other classes). Thus its primary purpose is educational.
+source of exercises and assignments for students in my Secure Programming class at Vermont State
+University (as well as possibly other classes). Thus its primary purpose is educational.
 
 Setting Up
 ----------
@@ -37,4 +37,4 @@ The following goals might be useful:
     mvn exec:exec        # Builds PDF version of the main documentation (in doc) [Not Implemented!]
 
 Peter Chapin  
-chapinp@acm.org  
+spicacality@kelseymountain.org  

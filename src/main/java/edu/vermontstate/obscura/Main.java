@@ -1,4 +1,4 @@
-package edu.vtc.obscura;
+package edu.vermontstate.obscura;
 
 public class Main {
 

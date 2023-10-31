@@ -1,4 +1,4 @@
-package edu.vtc.obscura;
+package edu.vermontstate.obscura;
 
 import java.io.InputStream;
 import java.io.OutputStream;

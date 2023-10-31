@@ -1,4 +1,4 @@
-package edu.vtc.obscura;
+package edu.vermontstate.obscura;
 
 /**
  * This enumeration type specifies the various Packet subtypes that exist. It is a red flag
