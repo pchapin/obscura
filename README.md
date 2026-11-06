@@ -1,7 +1,7 @@
 Obscura
 =======
 
-Obscura is a Java program that implements the OpenPGP standard. It is intended primarly as a
+Obscura is a Java program that implements the OpenPGP standard. It is intended primarily as a
 source of exercises and assignments for students in my Secure Programming class at Vermont State
 University (as well as possibly other classes). Thus its primary purpose is educational.
 
@@ -20,9 +20,7 @@ To get set up for doing Obscura development, follow these steps:
    and in your path. You can then use the Maven goals described below.
    
 4. If you want to use an IDE, be sure that it supports Maven integration. After installing your
-   IDE, import the `pom` file in this project to get started. For IntelliJ, select "import
-   project" from the menu on the opening screen, then be sure to select "import from an external
-   model" using "Maven" as the model type. All other defaults should be fine.
+   IDE, import the `pom` file in this project to get started.
    
 Maven Goals
 -----------

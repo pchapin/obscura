@@ -9,20 +9,17 @@ import java.io.OutputStream;
 public class SymmetricEncryptedIntegrityProtectedDataPacket implements Packet {
 
     @Override
-    public PacketType getType()
-    {
+    public PacketType getType() {
         return PacketType.SymmetricEncryptedIntegrityProtectedData;
     }
 
     @Override
-    public void write(OutputStream os)
-    {
+    public void write(OutputStream os) {
         // IMPLEMENT ME!
     }
 
     @Override
-    public void read(InputStream is)
-    {
+    public void read(InputStream is) {
         // IMPLEMENT ME!
     }
 
