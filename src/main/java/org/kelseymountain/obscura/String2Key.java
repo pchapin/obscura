@@ -1,4 +1,4 @@
-package edu.vermontstate.obscura;
+package org.kelseymountain.obscura;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;

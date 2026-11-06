@@ -1,4 +1,4 @@
-package edu.vermontstate.obscura;
+package org.kelseymountain.obscura;
 
 public class Main {
 

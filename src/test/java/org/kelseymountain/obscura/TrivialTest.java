@@ -1,4 +1,4 @@
-package edu.vermontstate.obscura;
+package org.kelseymountain.obscura;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

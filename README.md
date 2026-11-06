@@ -3,7 +3,7 @@ Obscura
 
 Obscura is a Java program that implements the OpenPGP standard. It is intended primarily as a
 source of exercises and assignments for students in my Secure Programming class at Vermont State
-University (as well as possibly other classes). Thus its primary purpose is educational.
+University (as well as possibly other classes). Thus, its primary purpose is educational.
 
 Setting Up
 ----------
@@ -27,9 +27,9 @@ Maven Goals
 
 The following goals might be useful:
 
-    mvn compile  # Compiles the program.
-    mvn test     # Compiles and executes unit tests.
-    mvn package  # Builds the executable jar file (in the target folder).
+    mvn compile          # Compiles the program.
+    mvn test             # Compiles and executes unit tests.
+    mvn package          # Builds the executable jar file (in the target folder).
     mvn javadoc:javadoc  # Builds the Javadoc API documentation (in target/site/apidocs).
     mvn spotbugs:gui     # Executes the Spotbugs analysis tool in GUI mode.
     mvn exec:exec        # Builds PDF version of the main documentation (in doc) [Not Implemented!]
